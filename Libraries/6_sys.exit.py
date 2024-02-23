@@ -1,0 +1,10 @@
+# to exit premaaturly the program if result came earlier
+
+import sys
+
+if len(sys.argv) < 2:
+    sys.exit("Too few arguments")
+elif len(sys.argv) > 2:
+    sys.exit("Too many arguments")
+else:
+    print("hello, my name is", sys.argv[1])
